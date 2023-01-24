@@ -1,0 +1,76 @@
+<div *ngIf="starship" class="card">
+  <div class="card-body">
+    <h1 class="card-title text-center">{{ starship.name }}</h1>
+    <div class="container mw-100">
+      <div class="row">
+        <div class="col-xl-4">
+          <img
+            src="{{ urlImagen }}/{{ starship | id }}.jpg"
+            class="card-img-top"
+            onerror="this.src='https://starwars-visualguide.com/assets/img/big-placeholder.jpg'"
+            alt="..."
+          />
+        </div>
+        <div class="col-xl-8 align-self-center">
+          <div class="row align-items-center">
+            <div class="col-xl-4 col-md-6 col-sm-12 align-self-center">
+              <h5 class="card-text">
+                Model:
+                {{ starship.model }}
+              </h5>
+              <h5 class="card-title">
+                Manufacturer:
+                {{ starship.manufacturer }}
+              </h5>
+              <h5 class="card-title">
+                Starship class:
+                {{ starship.starship_class }}
+              </h5>
+              <h5 class="card-title">
+                Cost:
+                {{ starship.cost_in_credits }}
+              </h5>
+            </div>
+
+            <div class="col-xl-4 col-md-6 col-sm-12">
+              <h5 class="card-title">
+                Crew:
+                {{ starship.crew }}
+              </h5>
+              <h5 class="card-title">
+                Passenger capacity:
+                {{ starship.passengers }}
+              </h5>
+              <h5 class="card-title">
+                Cargo capacity:
+                {{ starship.cargo_capacity }}
+              </h5>
+              <h5 class="card-title">
+                Consumables:
+                {{ starship.consumables }}
+              </h5>
+            </div>
+            <div class="col-xl-4 col-md-12 col-sm-12">
+              <h5 class="card-title">
+                Length:
+                {{ starship.length }}
+              </h5>
+              <h5 class="card-title">
+                Maximum atmosphering speed:
+                {{ starship.max_atmosphering_speed }}
+              </h5>
+              <h5 class="card-title">
+                Hyperdrive rating:
+                {{ starship.hyperdrive_rating }}
+              </h5>
+              <h5 class="card-title">
+                Maximum speed in real space:
+                {{ starship.MGLT }}
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

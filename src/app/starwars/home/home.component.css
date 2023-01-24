@@ -1,0 +1,31 @@
+.textoencima{
+    position: absolute!important;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: rgb(254, 254, 254);
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    background: none!important;
+}
+.carousel{
+   
+    margin: auto;
+ 
+}
+#background{
+    background-color: black!important;
+
+}
+
+#fotoCar{
+    filter: brightness(50%)!important;
+    max-width: 75%;
+    max-height: 75%;
+}
+h5{
+    font-size: 15px;
+}
+.card{
+    border: none!important;
+}

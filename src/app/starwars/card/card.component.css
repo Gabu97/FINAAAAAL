@@ -1,0 +1,29 @@
+h5{
+    font-size: 15px;
+    font-family: monospace;
+}
+
+.card{
+    border: none!important;
+    padding-left: 100px;
+    padding-right:100px ;
+    padding-bottom: 100px;
+    background-color: black;
+}
+img{
+    max-width: 600px;
+    padding: 20px;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+
+@media (max-width: 600px) {
+    .card{
+      
+        padding-left: 50px;
+        padding-right:50px ;
+       text-align: center;
+    }
+}

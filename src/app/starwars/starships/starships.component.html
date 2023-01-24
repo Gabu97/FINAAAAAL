@@ -1,0 +1,23 @@
+
+<div class="container mw-100" *ngIf="loggedIn">
+  <h2 class="text-center pt-5">LIST OF SHIPS</h2>
+<div data-bs-spy="scroll" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2">
+<div [routerLink]="['/starships/' , starship | id]"
+ *ngFor="let starship of starships; let i = index"
+ infinite-scroll
+           [infiniteScrollDistance]="4"
+           [infiniteScrollThrottle]="500" 
+           (scrolled)="onScroll()"
+           class="row row-col-1 justify-content-center"
+ >
+   <div class="col">
+    <div class="card mx-5 mt-5">
+        <div class="card-body">
+            <h4 class="btn">{{starship.name}} </h4><br><h5 class="ms-3">{{starship.model}}</h5> 
+        </div>
+      </div>
+
+</div>
+</div>
+</div>
+</div>

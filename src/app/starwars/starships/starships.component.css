@@ -1,0 +1,28 @@
+.container{
+    background-color: black!important;
+
+}
+.card{
+    background-color: rgb(41, 41, 41)!important;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.card-body{
+    background-color: rgb(41, 41, 41)!important;
+}
+h5{
+    background-color: rgb(41, 41, 41)!important;
+    font-size: 14px!important;
+    font-family: monospace;
+    color: rgb(171, 171, 171);
+}
+h4{
+    background-color: rgb(41, 41, 41)!important;
+    font-size: 18px!important;
+    font-family: monospace;
+    color: rgb(146, 146, 146);
+}
+h2{
+    font-family: monospace;
+}

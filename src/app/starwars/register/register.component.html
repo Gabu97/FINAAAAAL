@@ -1,0 +1,22 @@
+<div class="container mw-100 p-5">
+  <div class="container w-50" id="container">
+    <div class="row px-5">
+      <label class="text-center"> Name </label>
+      <input type="text" [(ngModel)]="name" />
+    </div>
+    <div class="row px-5">
+      <label class="text-center"> Email </label>
+      <input type="email" [(ngModel)]="email" />
+    </div>
+    <div class="row px-5" id="rows">
+      <label class="text-center"> Password </label>
+
+      <input type="password" [(ngModel)]="password" />
+    </div>
+    <div class="row w-50 mx-auto">
+      <button type="button" class="btn btn-warning" (click)="submitRegister()">Sign Up</button>
+    </div>
+
+    <a routerLink="/login" class="btn">Do you have already an account?</a>
+  </div>
+</div>

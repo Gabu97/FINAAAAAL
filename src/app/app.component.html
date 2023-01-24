@@ -1,0 +1,54 @@
+<!--Navbar-->
+<!--
+  <router-outlet></router-outlet>
+<router-outlet name="modal"></router-outlet> -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mw-100 sticky-top">
+  <div class="container-fluid">
+    <img src="../assets/fotos/starwars.png" class="mx-auto" id="starWars" />
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav mb-2 mb-lg-0 d-flex">
+        <a class="nav-link active" aria-current="page" href="">Home</a>
+        <a class="nav-link mx-4 my-2" [routerLink]="['/starships']" href="#"
+        >List of Ships</a
+      >
+        <a class="nav-link" href="#">Pricing</a>
+        <div *ngIf="!loggedIn">
+          <a id="login" routerLink="login">LOG IN</a>
+        </div>
+        <div *ngIf="loggedIn">
+          <p type="button" (click)="logout()" routerLink="home">LOG OUT</p>
+          <div class="row d-flex justify-content-end mt-3 pt-1 pe-2">
+            Welcome, {{ loggedUser }}
+          </div>
+        </div>
+      </div>
+      <form class="d-flex" role="search">
+        <input
+          class="form-control me-2 ms-5 ps-5"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<router-outlet></router-outlet>
+<div class="text-center mw-100" id="footer">
+  <div id="color">Featured</div>
+  <div class="card-body" id="color">
+    <div class="row justify-content-center text-center" id="color">
+      <a class="card-text btn"> Lorem ipsum dolor sit amet. </a>
+      <a class="card-text btn"> Lorem ipsum dolor sit amet. </a>
+      <a href="#" class="btn card-text">Go somewhere</a>
+    </div>
+  </div>
+  <div class="card-body text-muted">Copyright</div>
+</div>

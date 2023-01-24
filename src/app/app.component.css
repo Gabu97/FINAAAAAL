@@ -1,0 +1,48 @@
+*{
+    background-color: black!important;
+    max-width:1400px ;
+    font-family: 'Courier New', Courier, monospace;
+}
+#starWars{
+    width: 200px;
+    height: 160px;
+    margin: auto;
+}
+p{
+    font-size: 60px;
+    text-align: center;
+    font-weight: 900;
+}
+#titleNav{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 30px;
+
+}
+#footer{
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgb(19, 19, 19)!important;
+}
+
+#color{
+    background-color: rgb(19, 19, 19)!important;
+}
+.card-body{
+    background-color: rgb(19, 19, 19)!important;
+}
+.card-text{
+    background-color: rgb(19, 19, 19)!important;
+    color: grey;
+}
+.card-text:hover{
+color: white;
+}
+
+@media (max-width:600px) {
+    #starWars{
+        width: 100px;
+        height: 60px;
+        
+    }
+}
